@@ -27,6 +27,12 @@ Go to the extension's options and setup the IPs to work with the websites of you
 *Solution: STOP and refresh manually*
 
 
+###Roadmap
+
+1. Import/export settings
+2. Export PAC script to work with Firefox
+
+
 ###Contact
 
 *Twitter*: __@v3nka7__
