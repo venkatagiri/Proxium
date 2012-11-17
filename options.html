@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Options · Proxium</title>
+
+        <!-- Le CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/options.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <section>
+                    <div class="page-header">
+                        <h1>Options · <span style="color: #E32020">Proxium</span></h1>
+                    </div>
+
+                    <form class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label" for="defaultProxyServer">Default Proxy Server</label>
+                            <div class="controls">
+                                <div class="input-append">
+                                    <input type="text" name="defaultProxyServer" value="" placeholder="Default Proxy Server" />
+                                    <button class="btn" type="button" name="updateDefaultProxyServer">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <table class="proxy-list table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th style="width: 210px;">Proxy Server</th>
+                                <th>Host(s)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+        <!-- Le UI templates. -->
+        <script type="text/template" id="new-proxy-template">
+            <tr><td colspan="2">
+                <div class="form-inline new-proxy">
+                    <input type="text" name="server" value="" placeholder="New Proxy Server" />
+                    <input type="text" name="host" value="" placeholder="New Host" />
+                    <button class="btn" type="button" name="addNewProxyServer">Add a new Proxy Server</button>
+                </div>
+            </td></tr>
+        </script>
+        <script type="text/template" id="new-host-template">
+            <div class="input-append new-host">
+                <input type="text" name="host" value="" placeholder="New Host" />
+                <button class="btn" type="button" name="add">Add</button>
+            </div>
+        </script>
+        <script type="text/template" id="host-template">
+            <button class="btn host" data-host="{host}">{host}<i class="icon-ok"></i></button>
+        </script>
+        <script type="text/template" id="proxy-entry-template">
+            <tr class="proxy-entry">
+                <td class="server">
+                    <input type="text" placeholder="{server}" value="{server}" readonly="true" />
+                </td>
+                <td class="hosts"></td>
+            </tr>
+        </script>
+
+        <!-- Le JS -->
+        <script src="js/jquery-1.8.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/options.js"></script>
+    </body>
+</html>

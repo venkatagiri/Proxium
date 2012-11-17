@@ -1,0 +1,16 @@
+.proxy-list {
+    width: 700px;
+}
+.proxy-list input {
+    margin-bottom: 0;
+}
+.host {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.host i {
+    margin-left: 5px;
+}
+.form-horizontal .control-label {
+    text-align: left;
+}

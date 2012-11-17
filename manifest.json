@@ -1,0 +1,21 @@
+{
+    "name": "Proxium",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "128": "img/icon_128.png"
+    },
+    "background": {
+        "scripts": [ "js/parseuri.js", "js/background.js" ]
+    },
+    "browser_action": {
+        "default_icon" : "img/icon_38-grayscale.png",
+        "default_title" : "Enable Proxy!"
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "http://*/*",
+        "proxy",
+        "tabs"
+    ]
+}
