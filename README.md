@@ -29,8 +29,8 @@ Go to the extension's options and setup the IPs to work with the websites of you
 
 ###Roadmap
 
-1. Import/export settings
-2. Export PAC script to work with Firefox
+1. Import/Export settings
+2. Export PAC script to work with Firefox/Internet Explorer
 
 
 ###Contact
