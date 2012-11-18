@@ -1,4 +1,5 @@
 var Proxium = {
+    DEBUG: false,
     DEFAULT_PROXY_SERVER: 'Default Proxy Server',
     init: function() {
         Proxium.updateProxySettings();
@@ -106,7 +107,7 @@ var Proxium = {
                         "            return 'PROXY '+server;\n" +
                         "    return 'DIRECT';\n" +
                         "}";
-        console.log(pacScript);
+        if(Proxium.DEBUG) console.log(pacScript);
         var config = {
             mode: "pac_script",
             pacScript: {
@@ -120,7 +121,7 @@ var Proxium = {
         );
     },
     updateButtonUI: function(tab) {
-        console.log('ActiveURL: '+tab.url+ 'TabID: '+tab.id);
+        if(Proxium.DEBUG) console.log('ActiveURL: '+tab.url+ 'TabID: '+tab.id);
         var uri = parseUri(tab.url);
         if(!Proxium.isValidProtocol(uri.protocol)) {
             return;
