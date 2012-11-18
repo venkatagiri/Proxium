@@ -1,7 +1,7 @@
 Proxium, a one-click Proxy for Chrome ![Proxium Logo](https://github.com/venkatagiri/Proxium/raw/master/img/icon_38.png)
 =======
 
-Proxium allows you to configure a different proxy for individual websites.
+Proxium allows you to configure a different proxy for individual websites.  
 So, you can configure a US proxy for Pandora & Hulu, a UK proxy for BBC iPlayer and so on.
 
 
