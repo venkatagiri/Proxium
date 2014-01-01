@@ -26,7 +26,7 @@ var Proxium = {
         return "http" === protocol || "https" === protocol ;
     },
     getDefaultProxyServer: function() {
-        return (localStorage.getItem('defaultProxyServer') !== null) ? localStorage.getItem('defaultProxyServer') : "74.112.203.74:80";
+        return (localStorage.getItem('defaultProxyServer') !== null) ? localStorage.getItem('defaultProxyServer') : "199.167.31.174:1337";
     },
     updateDefaultProxyServer: function(server) {
         var oldServer = localStorage['defaultProxyServer'];

@@ -9,7 +9,7 @@ So, you can configure a US proxy for Pandora & Hulu, a UK proxy for BBC iPlayer 
 
 ###Instructions
 
-1. Download the extension from [here](http://dl.venkatagiri.tk/Proxium.crx)
+1. Download the extension from [here](http://dl.venkatagiri.me/Proxium.crx)
 2. Drag n drop the extension in to Chrome's extension page - [chrome://extensions](chrome://extensions)
 3. To immediately start using it, visit a website and click on the extension's icon
 4. *Grey* icon indicates that the website is not under proxy and *Blue* icon indicates that the website is being displayed under proxy
